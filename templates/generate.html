@@ -1,0 +1,30 @@
+<style>
+    #player {
+        text-align: center;
+        margin-top: 50px;
+       text-align: center;
+
+    }
+
+    input { padding: 40px; font-size: 26px; }
+    body {font-size: 60px;
+        text-align: center;
+        padding: 50px;
+        font-family: sans-serif;
+        background-color: rgba(227, 228, 232, 0.37);
+
+
+    }
+</style>
+Unique sound generated for {{ url }} <br>
+
+
+
+
+<audio id="player" controls loop>
+    <source src="{{ STATIC_URL }}{{ fname }}" >
+    Your browser does not support html5 audiotag
+</audio>
+
+
+{#<embed src= "{{ STATIC_URL }}hell.wav" hidden="false" autostart="true" loop="5">#}
